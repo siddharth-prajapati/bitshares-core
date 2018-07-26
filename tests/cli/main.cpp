@@ -330,7 +330,7 @@ BOOST_AUTO_TEST_CASE( cli_set_voting_proxy )
 
       fc::temp_directory app_dir( graphene::utilities::temp_directory_path() );
 
-      int server_port_number;
+      int server_port_number = 0;
       app1 = start_application(app_dir, server_port_number);
 
       // connect to the server
